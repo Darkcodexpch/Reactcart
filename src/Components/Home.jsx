@@ -23,7 +23,7 @@ function Home() {
         ));
     setTmpData(temporayData);
     // console.log("im running for useSize");
-  }, [size, price]);
+  }, [size, price,productData]);
 
   const marks = [
     {
@@ -96,7 +96,7 @@ function Home() {
           </Col>
           <Col sm="12" lg="10">
             <Row>
-              {tmpData.length === 0 || null || undefined && tmpData.price === null || undefined
+              {tmpData.length === 0  && tmpData.price === null 
                 ? productData &&
                   productData.map((pro) => {
                     return (

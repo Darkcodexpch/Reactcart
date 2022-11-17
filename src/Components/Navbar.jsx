@@ -24,21 +24,21 @@ import {
   CardBody,
   CardTitle,
   CardText,
-  ListGroupItemText,
 } from "reactstrap";
 
 function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { cart, setCart } = useContext(FeedbackContext);
-  const [cartTotal, setCartTotal] = useState();
+  const [cartTotal, setCartTotal] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => {
-      setOpenModal(false);
-      setCart([]);
+    setOpenModal(false);
+    setIsDrawerOpen(false);
+    setCart([]);
   };
   useEffect(() => {
-    setCartTotal(cart.reduce((acc, curr) => acc + curr.price, 0));
+    setCartTotal(cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0));
   }, [cart]);
   const style = {
     position: 'absolute',
@@ -51,7 +51,45 @@ function Navbar() {
     boxShadow: 24,
     p: 4,
   }
+  // increase work
+  const increaseQuantity = (id) => {
+    let increaseCartValue = cart.map((current) => {
+      if (current.id === id) {
+        return { ...current, quantity: current.quantity + 1 }
 
+      }
+      else {
+        return current;
+      }
+
+    })
+    return setCart(increaseCartValue);
+  }
+
+  // decrease work
+
+  const decreaseQuantity = (item) => {
+    if (item.quantity === 1) {
+      let remove = cart.filter((removeItem) => {
+        if (removeItem.id === item.id) {
+          return removeItem.id !== item.id
+        }
+        return removeItem
+      }
+      )
+      setCart(remove)
+    }
+    else {
+      let decreaseCartValue = cart.map((current) => {
+        if (current.id === item.id) {
+          return { ...current, quantity: current.quantity - 1 }
+
+        }
+      return current
+      })
+      return setCart(decreaseCartValue);
+    }
+  }
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -173,51 +211,49 @@ function Navbar() {
                           <span style={{ marginLeft: "2px" }}>Price: </span>
                           <strong>{item.price}</strong>
                         </CardText>
-                        <ListGroupItemText>
-                          <div
-                            style={{ display: "flex", alignItems: "center" }}
-                          >
-                            Quantity:
-                            <IconButton
-                              aria-label="delete">
-                              <RemoveIcon />
-                            </IconButton>
-                            <span>{item.quantity}</span>
-                            <IconButton
-                              aria-label="delete">
-                              <AddIcon />
-                            </IconButton>
-                          </div>
-                        </ListGroupItemText>
+                        <div
+                          style={{ display: "flex", alignItems: "center" }}
+                        >
+                          Quantity:
+                          <IconButton
+                            aria-label="delete" onClick={() => decreaseQuantity(item)} >
+                            <RemoveIcon />
+                          </IconButton>
+                          <span>{item.quantity}</span>
+                          <IconButton
+                            aria-label="Add" onClick={() => increaseQuantity(item.id)}>
+                            <AddIcon />
+                          </IconButton>
+                        </div>
                       </CardBody>
                     </Card>
                   );
                 })
               )}
-                {cart.length === 0 ? (
-                  <Button
-                    variant="contained"
-                    disabled
-                    style={{
-                      bottom: "0px",
-                      position: "absolute",
-                      width: "100%",
-                      right: "0",
-                    }}
-                  >
-                    Complete Check Out
-                  </Button>
-                ) : (
-                  <Button
-                    variant="contained"
-                    style={{
-                      bottom: "0px",
-                      position: "absolute",
-                      width: "100%",
-                      right: "0",
-                    }} 
-                    onClick={handleOpenModal}>Complete Check Out</Button>
-                )}
+              {cart.length === 0 ? (
+                <Button
+                  variant="contained"
+                  disabled
+                  style={{
+                    bottom: "0px",
+                    position: "absolute",
+                    width: "100%",
+                    right: "0",
+                  }}
+                >
+                  Complete Check Out
+                </Button>
+              ) : (
+                <Button
+                  variant="contained"
+                  style={{
+                    bottom: "0px",
+                    position: "absolute",
+                    width: "100%",
+                    right: "0",
+                  }}
+                  onClick={handleOpenModal}>Complete Check Out</Button>
+              )}
             </Col>
           </Row>
         </Box>

@@ -9,7 +9,6 @@ export const FeedbackProvider = ({ children }) => {
   const [size,setSize] = useState('');
 
 
-  // let obj={name:"kAMRAN"}
 
   return (
     <FeedbackContext.Provider

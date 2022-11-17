@@ -15,6 +15,7 @@ const myDATA = [
     name: "Blue T-Shirt",
     price: 110,
     image: Blue,
+    quantity:1,
   },
   {
     id: 202,
@@ -22,6 +23,8 @@ const myDATA = [
     name: "Bright Purple T-Shirt",
     price: 120,
     image: BrightPurple,
+    quantity:1,
+
   },
   {
     id: 203,
@@ -29,6 +32,8 @@ const myDATA = [
     name: "Cobalt Blue T-Shirt",
     price: 170,
     image: CobaltBlue,
+    quantity:1,
+
   },
   {
     id: 204,
@@ -36,6 +41,8 @@ const myDATA = [
     name: "Green T-shirt",
     price: 230,
     image: Green,
+    quantity:1,
+
   },
   {
     id: 205,
@@ -43,6 +50,8 @@ const myDATA = [
     name: "Grey T-shirt",
     price: 260,
     image: Grey,
+    quantity:1,
+
   },
   {
     id: 206,
@@ -50,6 +59,8 @@ const myDATA = [
     name: "Light Green T-shirt",
     price: 200,
     image: LightGreen,
+    quantity:1,
+
   },
   {
     id: 207,
@@ -57,6 +68,8 @@ const myDATA = [
     name: "Purple T-shirt",
     price: 130,
     image: Purple,
+    quantity:1,
+
   },
   {
     id: 208,
@@ -64,6 +77,8 @@ const myDATA = [
     name: "Red T-shirt",
     price: 300,
     image: Red,
+    quantity:1,
+
   },
   {
     id: 209,
@@ -71,6 +86,8 @@ const myDATA = [
     name: "Teal T-shirt",
     price: 320,
     image: Teal,
+    quantity:1,
+
   },
   {
     id: 210,
@@ -78,6 +95,8 @@ const myDATA = [
     name: "Red T-shirt",
     price: 320,
     image: Red,
+    quantity:1,
+
   },
 ];
 
