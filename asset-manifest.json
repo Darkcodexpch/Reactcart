@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/Reactcart/static/css/main.61791ee0.css",
-    "main.js": "/Reactcart/static/js/main.e2288bc8.js",
-    "static/js/787.68e3c82b.chunk.js": "/Reactcart/static/js/787.68e3c82b.chunk.js",
+    "main.js": "/Reactcart/static/js/main.a1afc607.js",
     "static/media/cobalt-blue-t-shirt.jpg": "/Reactcart/static/media/cobalt-blue-t-shirt.6bcc9219ea4e4a7eb06d.jpg",
     "static/media/teal-t-shirt.jpg": "/Reactcart/static/media/teal-t-shirt.dbecff17afae54748ca0.jpg",
     "static/media/purple-t-shirt.jpg": "/Reactcart/static/media/purple-t-shirt.ac83eba7c00dac570a90.jpg",
@@ -14,11 +13,10 @@
     "static/media/red-t-shirt.jpg": "/Reactcart/static/media/red-t-shirt.70c042f8592dc5266c27.jpg",
     "index.html": "/Reactcart/index.html",
     "main.61791ee0.css.map": "/Reactcart/static/css/main.61791ee0.css.map",
-    "main.e2288bc8.js.map": "/Reactcart/static/js/main.e2288bc8.js.map",
-    "787.68e3c82b.chunk.js.map": "/Reactcart/static/js/787.68e3c82b.chunk.js.map"
+    "main.a1afc607.js.map": "/Reactcart/static/js/main.a1afc607.js.map"
   },
   "entrypoints": [
     "static/css/main.61791ee0.css",
-    "static/js/main.e2288bc8.js"
+    "static/js/main.a1afc607.js"
   ]
 }
