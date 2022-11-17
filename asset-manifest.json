@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Reactcart/static/css/main.61791ee0.css",
+    "main.js": "/Reactcart/static/js/main.e2288bc8.js",
+    "static/js/787.68e3c82b.chunk.js": "/Reactcart/static/js/787.68e3c82b.chunk.js",
+    "static/media/cobalt-blue-t-shirt.jpg": "/Reactcart/static/media/cobalt-blue-t-shirt.6bcc9219ea4e4a7eb06d.jpg",
+    "static/media/teal-t-shirt.jpg": "/Reactcart/static/media/teal-t-shirt.dbecff17afae54748ca0.jpg",
+    "static/media/purple-t-shirt.jpg": "/Reactcart/static/media/purple-t-shirt.ac83eba7c00dac570a90.jpg",
+    "static/media/bright-purple-t-shirt.jpg": "/Reactcart/static/media/bright-purple-t-shirt.4c5368b55063d668bc33.jpg",
+    "static/media/blue-t-shirt.jpg": "/Reactcart/static/media/blue-t-shirt.c023b18078254c314ba1.jpg",
+    "static/media/light-green-t-shirt.jpg": "/Reactcart/static/media/light-green-t-shirt.db2f2f962144011ed290.jpg",
+    "static/media/green-t-shirt.jpg": "/Reactcart/static/media/green-t-shirt.b5215057be5a4155c3e3.jpg",
+    "static/media/grey-t-shirt.jpg": "/Reactcart/static/media/grey-t-shirt.98495bb96a1018800845.jpg",
+    "static/media/red-t-shirt.jpg": "/Reactcart/static/media/red-t-shirt.70c042f8592dc5266c27.jpg",
+    "index.html": "/Reactcart/index.html",
+    "main.61791ee0.css.map": "/Reactcart/static/css/main.61791ee0.css.map",
+    "main.e2288bc8.js.map": "/Reactcart/static/js/main.e2288bc8.js.map",
+    "787.68e3c82b.chunk.js.map": "/Reactcart/static/js/787.68e3c82b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61791ee0.css",
+    "static/js/main.e2288bc8.js"
+  ]
+}
